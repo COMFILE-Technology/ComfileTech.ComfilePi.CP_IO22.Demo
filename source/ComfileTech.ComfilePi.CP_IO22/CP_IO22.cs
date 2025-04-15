@@ -1,10 +1,4 @@
-﻿using Iot.Device.Ads1115;
-using System;
-using System.Collections.Generic;
-using System.Device.Gpio;
-using System.Device.I2c;
-using System.Runtime.InteropServices;
-using System.Threading;
+﻿using System.Collections.Generic;
 
 namespace ComfileTech.ComfilePi.CP_IO22
 {
