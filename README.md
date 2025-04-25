@@ -1,6 +1,6 @@
 # ComfileTech.ComfilePi.CP_IO22.Demo
 
-This is a .NET Framework Winforms application to demonstrate features of the [CP-IO22](https://comfiletech.com/raspberry-pi-panel-pc/cp-io22-i-o-board-accessory-for-the-cpi-s-series/) IO accessory board for COMFILE Technology's ComfilePi industrial touchscreen panel PCs, and program it.
+This is a .NET Framework Winforms application to demonstrate features of the [CP-IO22](https://comfiletech.com/raspberry-pi-panel-pc/cp-io22-i-o-board-accessory-for-the-cpi-s-series/) IO board for the [ComfilePi industrial touchscreen panel PCs](https://comfiletech.com/linux-panel-pc/), and how to program it.
 
 Execution on a ComfilePi panel PC requires [Mono](https://gitlab.winehq.org/mono/mono), which should already be installed by default on the ComfilePi panel PCs.
 
