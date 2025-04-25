@@ -9,14 +9,6 @@ This application uses the following .NET libraries to control the digital inputs
 
 Although the `ComfileTech.ComfilePi.CP_IO22.Demo` project is a .NET Framework Winforms application, the `ComfileTech.ComfilePi.CP_IO22` project is a .NET Standard library, so it can also be used in more recent .NET 8+ applications.
 
-## Deploying to a ComfilePi Panel PC
+## Deploying to and Debugging on a ComfilePi Panel PC
 
-The `ComfileTech.ComfilePi.CP_IO22.Demo` project has 2 different launch profiles, which can be found in the `Properties/launchSettings.json` file.  
-* The `Windows` profile is for running the application on a Windows development machine to verify the appearance of the application. 
-* The `ComfilePi` profile will deploy the application to a ComfilePi panel PC over SSH.  
-
-The ComfilePi panel PC must have SSH enabled.  Adjust the `ComfilePiUser` and `ComfilePiIpAddress` properties on the `ComfileTech.ComfilePi.CP_IO22.Demo.csroj` file to adjust the deployment for your ComfilePi's unique configuration.
-
-## Debugging the Application on a ComfilePi Panel PC
-
-Debugging mono applications running on a ComfilePi panel PC from within Visual Studio is not currently possible without 3rd party Visual Studio extensions, however, the `ComfilePi` launch profile should provide a convenient development experience from within Visual Studio.
+Install COMFILE Technology's [Remote Mono Debugger Visual Studio extension](http://www.comfilewiki.co.kr/en/doku.php?id=comfilepi:running_.net_winforms_applications_with_mono:remote_mono_debugger:index#ssh_authentication), and then edit the `ComfilePi` launch profile to deploy the application to and debug it on a ComfilePi from within Visual Studio.
