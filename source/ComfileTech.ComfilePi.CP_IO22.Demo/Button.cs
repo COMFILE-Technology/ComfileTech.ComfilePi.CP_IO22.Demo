@@ -25,6 +25,7 @@ namespace ComfileTech.ComfilePi.CP_IO22.Demo
         /// The image to display when the button is pressed.
         /// </summary>
         [Description("The image to display when the button is pressed.")]
+        [DefaultValue(null)]
         public Image PressedImage
         {
             get; set;
@@ -34,6 +35,7 @@ namespace ComfileTech.ComfilePi.CP_IO22.Demo
         /// The image to display when the button is released.
         /// </summary>
         [Description("The image to display when the button is released.")]
+        [DefaultValue(null)]
         public Image ReleasedImage
         {
             get; set;
@@ -44,6 +46,7 @@ namespace ComfileTech.ComfilePi.CP_IO22.Demo
         /// The current state of the button.  `true` means the button is pressed, `false` means the button is released.
         /// </summary>
         [Description("The current state of the button.  `true` means the button is pressed, `false` means the button is released.")]
+        [DefaultValue(false)]
         public bool State
         {
             get { return _state; }

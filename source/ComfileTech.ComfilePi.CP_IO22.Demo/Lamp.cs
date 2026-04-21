@@ -25,6 +25,7 @@ namespace ComfileTech.ComfilePi.CP_IO22.Demo
         /// The image to display when the lamp is on.
         /// </summary>
         [Description("The image to display when the lamp is on.")]
+        [DefaultValue(null)]
         public Image OnImage
         {
             get; set;
@@ -34,6 +35,7 @@ namespace ComfileTech.ComfilePi.CP_IO22.Demo
         /// The image to display when the lamp is off.
         /// </summary>
         [Description("The image to display when the lamp is off.")]
+        [DefaultValue(null)]
         public Image OffImage
         {
             get; set;
@@ -45,6 +47,7 @@ namespace ComfileTech.ComfilePi.CP_IO22.Demo
         /// The current state of the lamp.  `true` means the lamp is on, `false` means the lamp is off.
         /// </summary>
         [Description("The current state of the lamp.  `true` means the lamp is on, `false` means the lamp is off.")]
+        [DefaultValue(false)]
         public bool State
         {
             get { return _state; }
