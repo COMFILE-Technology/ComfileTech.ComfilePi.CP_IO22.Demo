@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net10.0'">
-    <PackageReference Include="ComfileTech.WinForms" />
+    <PackageReference Include="ComfileTech.WinForms" Version="2.0.2" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0' Or '$(TargetFramework)' == ''">
@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0" />
   </ItemGroup>
 
   <ItemGroup>
