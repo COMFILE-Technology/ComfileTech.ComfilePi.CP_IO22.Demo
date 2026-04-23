@@ -5,20 +5,12 @@ namespace ComfileTech.ComfilePi.CP_IO22
     /// <summary>
     /// Represents the CP-IO22 IO board connected to the ComfilePi.
     /// </summary>
-    public class CP_IO22
+    public class CP_IO22 : System.IDisposable
     {
-        static CP_IO22()
-        {
-            Instance = new CP_IO22();
-        }
-
         /// <summary>
         /// The singleton instance of this class.
         /// </summary>
-        public static CP_IO22 Instance
-        {
-            get; private set;
-        }
+        public static CP_IO22 Instance { get; } = new CP_IO22();
 
         private CP_IO22()
         {
@@ -58,6 +50,25 @@ namespace ComfileTech.ComfilePi.CP_IO22
         public IReadOnlyList<DigitalOutput> DigitalOutputs
         {
             get;
+        }
+
+        bool _disposed;
+
+        /// <summary>
+        /// Releases the GPIO resources used by the IO board.
+        /// </summary>
+        public void Dispose()
+        {
+            if (_disposed)
+            {
+                return;
+            }
+
+            DigitalInput.DisposeGpioController();
+            DigitalOutput.DisposeGpioController();
+
+            _disposed = true;
+            System.GC.SuppressFinalize(this);
         }
     }
 }

@@ -14,5 +14,10 @@ namespace ComfileTech.ComfilePi.CP_IO22
         internal DigitalInput(int number)
             : base(number, PinMode.Input)
         { }
+
+        internal static void DisposeGpioController()
+        {
+            DisposeGpioControllerCore();
+        }
     }
 }
